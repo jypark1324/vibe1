@@ -2597,7 +2597,9 @@
         padding: 118px 24px 24px;
       }
       .hero-grid {
-        grid-template-columns: minmax(500px,.9fr) minmax(680px,1.1fr);
+        width: min(100%,1320px);
+        grid-template-columns: minmax(500px,.95fr) minmax(560px,1.05fr);
+        justify-content: center;
         gap: clamp(14px,1.2vw,20px);
       }
       .hero h1 {
@@ -2616,6 +2618,7 @@
         padding-top: 18px;
       }
       .hero-aside.service-visual.admin-visual {
+        width: 100%;
         min-height: 560px;
         padding: 14px;
         justify-self: start;
